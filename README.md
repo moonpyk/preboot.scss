@@ -9,7 +9,7 @@ This project is a conversion of the LESS version to SASS (in SCSS syntax).
 Preboot.scss requires [SASS](http://sass-lang.com/). Head over to their documentation and familiarize yourself with the project. Once you're up and running, including and using Preboot is a breeze.
 
 1. Create a new SCSS file (e.g., application.scss)
-2. Include Preboot via `@import "preboot;"`
+2. Include Preboot via `@import "preboot";`
 3. Start writing your own SCSS-flavored CSS
 
 We highly recommend using Preboot in conjunction with [Normalize](http://necolas.github.com/normalize.css), a powerful tool for more consistent rendering of web components across various browsers and devices.
