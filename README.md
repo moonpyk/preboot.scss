@@ -1,22 +1,18 @@
-# [Preboot 2](http://getpreboot.com)
+# Preboot 2 (SCSS conversion)
 
 Preboot is a collection of LESS mixins and variables for quickly writing CSS. As the precursor to [Bootstrap](http://getbootstrap.com), it serves as a lightweight and interface agnostic approach to jumpstarting your next web project. Use it how you see fit.
 
+This project is a conversion of the LESS version to SASS (in SCSS syntax).
 
 ## Getting started
 
-Preboot requires [LESS](http://lesscss.org). Head over to their documentation and familiarize yourself with the project. Once you're up and running, including and using Preboot is a breeze.
+Preboot.scss requires [SASS](http://sass-lang.com/). Head over to their documentation and familiarize yourself with the project. Once you're up and running, including and using Preboot is a breeze.
 
-1. Create a new LESS file (e.g., application.less)
-2. Include Preboot via `@import: "preboot.less"`
-3. Start writing your own LESS-flavored CSS
+1. Create a new SCSS file (e.g., application.scss)
+2. Include Preboot via `@import "preboot";`
+3. Start writing your own SCSS-flavored CSS
 
 We highly recommend using Preboot in conjunction with [Normalize](http://necolas.github.com/normalize.css), a powerful tool for more consistent rendering of web components across various browsers and devices.
-
-
-## Bugs and feature requests
-
-Have a bug or a feature request? [Please open a new issue](https://github.com/mdo/preboot/issues). Before opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas/).
 
 
 ## Author
@@ -26,6 +22,14 @@ Have a bug or a feature request? [Please open a new issue](https://github.com/md
 + [http://twitter.com/mdo](http://twitter.com/mdo)
 + [http://github.com/mdo](http://github.com/mdo)
 
+## SASS: Conversion less to Sass
+
+Converted to Sass by:
+
+**Clément Bourgeois**
+
++ [http://twitter.com/moonpyk](http://twitter.com/moonpyk)
++ [http://github.com/moonpyk](http://github.com/moonpyk)
 
 ## Brief history
 

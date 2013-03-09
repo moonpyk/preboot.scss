@@ -9,7 +9,7 @@ PATH := ./node_modules/.bin:$(PATH)
 # COMPILE CSS
 #
 
-build:
+build-less:
 	@echo "\n"
 	@printf "${DATE} · \033[35mCompiling Preboot...\033[39m"
 	@recess --compile ${DOCS} > ${DOCS_COMPILED}
@@ -21,4 +21,4 @@ build:
 
 watch:
 	echo "Watching less files..."; \
-	watchr -e "watch('less/.*\.less') { system 'make' }"
+	watchr -e "watch('less/.*\.less') { system 'make build-less' }"
