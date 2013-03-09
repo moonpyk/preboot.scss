@@ -33,10 +33,10 @@ body {
 
 // Bangin' links
 a {
-  color: @link-color;
+  color: $link-color;
   text-decoration: none;
   &:hover {
-    color: @link-color-hover;
+    color: $link-color-hover;
     text-decoration: underline;
   }
 }
@@ -71,7 +71,7 @@ p {
 .lead {
   font-size: 18px;
   line-height: 1.25;
-  color: @black-40;
+  color: $black-40;
 }
 
 ol,
@@ -156,8 +156,8 @@ pre {
 }
 
 // Super simple grid
-.row { .make-row(); }
-.grid-4 { .make-column(4); }
+.row { @include make-row(); }
+.grid-4 { @include make-column(4); }
 
 
 // Neato divider between headers and content
@@ -186,7 +186,7 @@ pre {
 .masthead {
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,.3);
-  #gradient > .vertical(darken(saturate(#7a43b6, 10%), 15%), darken(#08b5fb, 5%));
+  @include gradient-vertical(darken(saturate(#7a43b6, 10%), 15%), darken(#08b5fb, 5%));
 }
 .masthead-inner {
   padding: 30px;
@@ -240,7 +240,7 @@ pre {
 // Colors
 .color-swatches {
   margin: 0 -5px 20px;
-  .clearfix();
+  @include clearfix();
 }
 .color-swatch {
   float: left;
@@ -248,21 +248,21 @@ pre {
   height: 80px;
   margin: 5px 2px;
 
-  &.black-10 { background-color: @black-10; }
-  &.black-20 { background-color: @black-20; }
-  &.black-30 { background-color: @black-30; }
-  &.black-40 { background-color: @black-40; }
-  &.black-50 { background-color: @black-50; }
-  &.black-60 { background-color: @black-60; }
-  &.black-70 { background-color: @black-70; }
-  &.black-80 { background-color: @black-80; }
-  &.black-90 { background-color: @black-90; }
+  &.black-10 { background-color: $black-10; }
+  &.black-20 { background-color: $black-20; }
+  &.black-30 { background-color: $black-30; }
+  &.black-40 { background-color: $black-40; }
+  &.black-50 { background-color: $black-50; }
+  &.black-60 { background-color: $black-60; }
+  &.black-70 { background-color: $black-70; }
+  &.black-80 { background-color: $black-80; }
+  &.black-90 { background-color: $black-90; }
 
-  &.brand-primary { background-color: @brand-primary;}
-  &.brand-success { background-color: @brand-success;}
-  &.brand-warning { background-color: @brand-warning;}
-  &.brand-danger  { background-color: @brand-danger;}
-  &.brand-info    { background-color: @brand-info;}
+  &.brand-primary { background-color: $brand-primary;}
+  &.brand-success { background-color: $brand-success;}
+  &.brand-warning { background-color: $brand-warning;}
+  &.brand-danger  { background-color: $brand-danger;}
+  &.brand-info    { background-color: $brand-info;}
 }
 
 // Buttons
