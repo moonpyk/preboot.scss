@@ -883,6 +883,7 @@ pre code {
   background-image: -o-linear-gradient(top, #542687, #04a5e6);
   background-image: linear-gradient(to bottom, #542687, #04a5e6);
   background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF542687', endColorstr='#FF04A5E6', GradientType=0);
 }
 
 .masthead-inner {
