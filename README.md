@@ -31,6 +31,14 @@ Converted to Sass by:
 + [http://twitter.com/moonpyk](http://twitter.com/moonpyk)
 + [http://github.com/moonpyk](http://github.com/moonpyk)
 
+## Port hints
+
+SASS functions reference is available at : [http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html](http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html)
+
+### LESS -> SASS special mappings
+
+LESS function argb(@val) -> SCSS function ie_hex_str($val)
+
 ## Brief history
 
 Preboot was originally released in March 2011 under the name Bootstrap.less. Sensing the need for a larger and more comprehensive framework, I copped the name and created Bootstrap based on the original variables and mixins work here. To avoid obivous naming issues, I renamed this Preboot and essentially didn't touch the project for two years.
