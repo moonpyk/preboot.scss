@@ -57,8 +57,7 @@ $input-color-placeholder: lighten($text-color, 25%);
 // Grid
 // Used with the grid mixins below
 $grid-columns: 12;
-$grid-column-padding: 15px;
-// Left and right inner padding
+$grid-column-padding: 15px; // Left and right inner padding
 $grid-float-breakpoint: 768px;
 
 //
@@ -76,13 +75,16 @@ $grid-float-breakpoint: 768px;
 
 @mixin make-column($columns) {
   @media (min-width: $grid-float-breakpoint) {
-    float: left; // Calculate width based on number of columns available
+    float: left; 
+    // Calculate width based on number of columns available
     width: percentage($columns / $grid-columns);
   }
   // Prevent columns from collapsing when empty
-  min-height: 1px; // Set inner padding as gutters instead of margin
+  min-height: 1px; 
+  // Set inner padding as gutters instead of margin
   padding-left: $grid-column-padding;
-  padding-right: $grid-column-padding; // Proper box-model (padding doesn't add to width)
+  padding-right: $grid-column-padding; 
+  // Proper box-model (padding doesn't add to width)
   @include box-sizing(border-box);
 }
 
@@ -99,7 +101,7 @@ $grid-float-breakpoint: 768px;
 // Box sizing
 @mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model; // Safari <= 5
-  -moz-box-sizing: $box-model;  // Firefox <= 19
+  -moz-box-sizing: $box-model;    // Firefox <= 19
   box-sizing: $box-model;
 }
 
