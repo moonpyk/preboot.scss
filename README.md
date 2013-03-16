@@ -26,7 +26,7 @@ We highly recommend using Preboot in conjunction with [Normalize](http://necolas
 
 Converted to Sass by:
 
-**ClÃ©ment Bourgeois**
+**Clément Bourgeois**
 
 + [http://twitter.com/moonpyk](http://twitter.com/moonpyk)
 + [http://github.com/moonpyk](http://github.com/moonpyk)
